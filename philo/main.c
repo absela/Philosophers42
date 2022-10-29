@@ -80,7 +80,8 @@ int	main(int ac, char **av)
 		return (0);
 	while (++i < phil.numb_philo)
 		lol[i].popy = &phil;
-	createp(lol);
+	if	(createp(lol))
+		return (print_error("error\n"), 1);
 	i = -1;
 	expiry(lol);
 	while (++i < lol->popy->numb_philo)
