@@ -65,10 +65,8 @@ int	in_mutex(t_phila *lol)
 
 int	createp(t_phila *lol)
 {
-	int	i;
 	int	numb;
 
-	i = 0;
 	if (pthread_mutex_init(&lol->popy->printt, NULL) != 0)
 		return (0);
 	if (in_mutex(lol) != 0)
